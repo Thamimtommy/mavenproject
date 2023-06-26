@@ -20,6 +20,20 @@ public class UserService {
 			
 		}
 	
+	public void create(){
+		
+		User newUser = new User();
+		newUser.setId(001);
+		newUser.setFirstName("thamim");
+		newUser.setLastName("tommy");
+		newUser.setEmail("thamimtommy@gmail.com");
+		newUser.setPassword("tommy@8973");
+		newUser.setActive(true);
+			
+			UserDAO userDAO = new UserDAO();
+			userDAO.create(newUser);
+	 }
+	
 	
 	
 }
