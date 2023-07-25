@@ -46,10 +46,7 @@ public class TestGetAllUsers {
         User newUser = new User();
 		
 		newUser.setFirstName("thamim");
-		newUser.setLastName("alagu");
-		newUser.setEmail("tommy@gmail.com");
-		newUser.setPassword("alagu@1234");
-		
+		newUser.setLastName("alagu");		
 		userService.update(6, newUser);
 		
 

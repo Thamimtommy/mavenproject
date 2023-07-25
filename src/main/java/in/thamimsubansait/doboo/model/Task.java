@@ -1,6 +1,7 @@
 package in.thamimsubansait.doboo.model;
 
 public class Task {
+	
 	int id;
 	String name;
 	String duedate;

@@ -1,6 +1,7 @@
 in\thamimsubansait\doboo\dao\UserDAO.class
 in\thamimsubansait\doboo\dao\TaskDAO.class
 in\thamimsubansait\doboo\service\UserService.class
+in\thamimsubansait\doboo\util\ConnectionUtil.class
 in\thamimsubansait\doboo\service\TaskService.class
 in\thamimsubansait\doboo\model\UserEntity.class
 in\thamimsubansait\doboo\Interface\Base.class
