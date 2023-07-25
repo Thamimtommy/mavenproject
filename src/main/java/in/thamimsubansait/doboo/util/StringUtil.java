@@ -22,6 +22,7 @@ public class StringUtil {
 		}
 		
 	}
+	
 	public static boolean isInvalidString(String input) {
 		
 		if(input == null || "".equals(input.trim())) {

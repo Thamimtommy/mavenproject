@@ -1,22 +1,25 @@
 package in.thamimsubansait.doboo.service;
 
 import in.thamimsubansait.doboo.dao.UserDAO;
+import java.util.*;
 
 import in.thamimsubansait.doboo.model.User;
 import in.thamimsubansait.doboo.validation.UserValidator;
 
 public class UserService {
+	
+	private UserDAO userDao;
 
-	public User[] getAll() {
+	public UserService() {
+		this.userDao = new UserDAO(); // Initialize userDao instance in the constructor
+	}
 
-		UserDAO userDAO = new UserDAO();
+	public Set<User> getAll() {
 
-		User[] userList = userDAO.findAll();
-
-		for (int i = 0; i < userList.length; i++) {
-			System.out.println(userList[i]);
-		}
-
+		Set<User> userList = userDao.findAll();
+//		for (User user : userList) {
+//			System.out.println(user);
+//		}
 		return userList;
 
 	}
@@ -38,6 +41,11 @@ public class UserService {
 	public void delete(int id) {
 		UserDAO userDAO = new UserDAO();
 		userDAO.delete(id);
+	}
+	
+	public User findById(int id) {
+		UserDAO userDao = new UserDAO();
+		return userDao.findById(id);
 	}
 
 }

@@ -1,8 +1,9 @@
 package in.thamimsubansait.doboo.dao;
 
-import in.thamimsubansait.doboo.model.User;
+import java.util.*;
+import in.thamimsubansait.doboo.model.*;
 
 public class UserList {
 	
-	public static User[] listOfUser = new User[10];
+	public static Set<User> listOfUser = new HashSet<>() ;
 }
